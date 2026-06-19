@@ -1,0 +1,7 @@
+db.sqlite3 
+*.rar 
+*.docx 
+node_modules/ 
+__pycache__/ 
+*.pyc 
+.env 
