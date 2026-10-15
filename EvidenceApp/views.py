@@ -19,7 +19,7 @@ def getContract():
     web3 = Web3(HTTPProvider(blockchain_address))
     web3.eth.defaultAccount = web3.eth.accounts[0]
     compiled_contract_path = 'Evidence.json' #Evidence contract file
-    deployed_contract_address = 'YOUR_CONTRACT_ADDRESS_HERE' #contract address
+    deployed_contract_address = 'YOUR_CONTRACT_ADDRESS_HERE'  # Replace with your deployed contract address
     with open(compiled_contract_path) as file:
         contract_json = json.load(file)  # load contract info as JSON
         contract_abi = contract_json['abi']  # fetch contract's abi - necessary to call its functions
